@@ -1,5 +1,8 @@
 tasks = []
 
+def add_task(title):
+    tasks.append(title)
+    print(f"Task added: {title}")
 
 def view_tasks():
     if not tasks:
@@ -14,6 +17,10 @@ def view_tasks():
 
 def main():
     print("===== TASK TRACKER =====")
+
+    title = input("Enter a task: ")
+
+    add_task(title)
 
     view_tasks()
 
