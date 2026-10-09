@@ -24,6 +24,7 @@ def main():
 
     view_tasks()
 
+print(f"Found: {task}")
 
 if __name__ == "__main__":
     main()
